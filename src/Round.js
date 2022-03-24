@@ -26,11 +26,12 @@ class Round {
     //console.log(this.deck.cards.length);
     const cardCount = this.deck.countCards();
     const correct = cardCount - this.incorrectGuesses.length;
-    const percentCorrect = (cardCount/correct) * 100;
+    const percentCorrect = Math.round((correct/cardCount) * 100);
     return percentCorrect
   };
   endRound() {
-    return `**Round over!** You answered ${this.calculatePercentCorrect()}% ofthe questions correctly!`
+    console.log(`**Round over!** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`)
+    return `**Round over!** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`
   }
 }
 

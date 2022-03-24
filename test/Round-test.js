@@ -99,7 +99,7 @@ it('should be able to print a message to the console', function() {
   const deck = new Deck([card1, card2, card3]);
   const round = new Round(deck);
   round.endRound();
-  expect(round.endRound()).to.equal(`**Round over!** You answered 100% ofthe questions correctly!`)
+  expect(round.endRound()).to.equal(`**Round over!** You answered 100% of the questions correctly!`)
 });
 
 })
