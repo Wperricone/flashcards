@@ -14,7 +14,7 @@ describe('Deck', function() {
 it('should store an array of card objects', function() {
 const deck = new Deck();
 expect(deck.cards).to.be.an('array');
-})
+});
 
 it('should know how many cards are in the deck', function() {
   const card1 = new Card(1, 'What allows you to define a set of related information using key-value pairs?', ['object', 'array', 'function'], 'object');
@@ -23,6 +23,6 @@ it('should know how many cards are in the deck', function() {
   const deck = new Deck([card1, card2, card3]);
   expect(deck.countCards()).to.equal(3)
 
-} )
+});
 
 });
